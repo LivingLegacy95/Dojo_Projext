@@ -3,19 +3,19 @@ body {
     height: 100%;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    line-height: 1.8em;
+    line-height: 1.8rem;
     color: #666;
     scroll-behavior: smooth;
 }
 
 a {
-    color: #FFF;
+    color: black;
 }
 
 .section {
     text-align: center;
     padding: 50px 80px;
-    background-color: #fff;
+    background-color: #fafafa;
 }
 
 .parallex {
@@ -71,8 +71,6 @@ a {
 
 .box {
     position: relative;
-    width: 800px;
-    height: 200px;
     background: #fff;
 }
 
@@ -81,4 +79,20 @@ a {
     text-align: center;
     top: 38%;
     left: 43%;
+}
+.nav {
+    padding: 1rem;
+}
+.bi {
+    font-size: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
 }
