@@ -1,0 +1,6 @@
+.bkg-img{
+    /* background-image:  */
+    backround-repeat: repeat;
+    background attachment: fixed;
+    background-size: cover;
+}
