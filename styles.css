@@ -36,22 +36,32 @@ a {
 }
 
 .parallex__image--1 {
-    background-image: url("https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    min-height: 100%;
+    background-image: url("./Images/naruto-and-sasuke-sage-of-six-paths-uzumaki-naruto-manga-sketch-wallpaper-preview.jpg");
+    min-height: 50%;
 }
 
 .parallex__image--2 {
-    background-image: url("https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg?auto=compress&cs=tinysrgb&h=350");
+    background-image: url("./Images/Hidden_Villages/Konoha.png");
     min-height: 500px;
 }
 
 .parallex__image--3 {
-    background-image: url("https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&h=350");
+    background-image: url("./Images/Hidden_Villages/Kirigakure_HiddenMist.webp");
     min-height: 500px;
 }
 
 .parallex__image--4 {
-    background-image: url("https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&h=350");
+    background-image: url("./Images/Hidden_Villages/Iwagakure_Hidden_Stone.webp");
+    min-height: 500px;
+}
+
+.parallex__image--5 {
+    background-image: url("./Images/Hidden_Villages/Sunagakure.png");
+    min-height: 500px;
+}
+
+.parallex__image--6 {
+    background-image: url("./Images/Hidden_Villages/Kumogakure.jpg");
     min-height: 500px;
 }
 
@@ -70,10 +80,16 @@ a {
 }
 
 .box {
-    position: relative;
-    width: 800px;
-    height: 200px;
+    min-width: 800px;
+    min-height: 200px;
     background: #fff;
+}
+
+.box-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
 }
 
 .box p {
@@ -81,4 +97,9 @@ a {
     text-align: center;
     top: 38%;
     left: 43%;
+}
+
+.img{
+    height: 75px;
+    width: 75px;
 }
