@@ -1,9 +1,11 @@
 * {
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 html,
 body {
+    padding-top: 20px;
     height: 100%;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -28,9 +30,12 @@ a {
 
 .parallex {
     text-align: center;
+    position: relative;
 }
 
 .parallex__image,
+.parallex__image--6,
+.parallex__image--5,
 .parallex__image--4,
 .parallex__image--3,
 .parallex__image--2,
@@ -44,8 +49,8 @@ a {
 }
 
 .parallex__image--1 {
-    background-image: url("https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    min-height: 100%;
+    background-image: url("./Images/naruto-and-sasuke-sage-of-six-paths-uzumaki-naruto-manga-sketch-wallpaper-preview.jpg");
+    min-height: 100rem;
 }
 
 .parallex__image--2 {
@@ -88,13 +93,14 @@ a {
 }
 
 .box {
+    padding: 15px;
     min-width: 800px;
     min-height: 200px;
     position: relative;
     background: #fff;
 }
 
-.box-content{
+.box-content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -107,6 +113,7 @@ a {
     top: 38%;
     left: 43%;
 }
+
 .nav {
     padding: 1rem;
 }
@@ -121,11 +128,22 @@ a {
     box-shadow: 0px -2px 30px -7px rgba(0, 0, 0, 0.28);
 }
 
-.img{
+.img {
     height: 75px;
 
 }
 
-video {
+iframe {
     margin: 1rem;
+    height: 20rem;
+}
+
+.landing {
+    display: flex;
+    justify-content: center;
+}
+
+.distortion {
+    height: calc(835px / 2);
+    width: calc((1086px / 2) + 1px);
 }
