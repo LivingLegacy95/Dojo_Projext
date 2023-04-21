@@ -8,9 +8,10 @@ var videos = ["https://www.youtube.com/watch?v=JvmaMEfhQuE&list=PLnp0SSa5LpQeTzB
     "https://www.youtube.com/watch?v=EFswQ6uy59A&list=PLnp0SSa5LpQeTzBw1iFxxI4b-N2805bFf&index=10&t=30s"];
 
 var leftBtn = document.querySelector(".leftBtn");
-var leftVideo = document.querySelector(".leftVideo");
+var leftVideo = document.getElementsByClassName("leftVideo");
 var rightBtn = document.querySelector(".rightBtn");
-var rightVideo = document.querySelector(".rightVideo");
+var rightVideo = document.getElementsByClassName("rightVideo");
+
 
 window.addEventListener("onload", function () {
     leftVideo.src = videos[0];
@@ -18,13 +19,16 @@ window.addEventListener("onload", function () {
 });
 
 leftBtn.addEventListener("click", () => {
+    console.log("left");
     for (let i = videos.length - 1; i > 1; i--) {
         rightVideo.src = videos[i];
         videos.pop();
     }
 });
 
+
 rightBtn.addEventListener("click", () => {
+    console.log("right");
     for (let i = videos.length - 1; i > 1; i--) {
         leftVideo.src = videos[i];
         videos.pop();
